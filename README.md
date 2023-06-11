@@ -1,7 +1,5 @@
-# Ce Murmure 2019
-
-Made with [webpack-babel-pug-stylus](https://github.com/qnp/webpack-babel-pug-stylus/) starter.
+# Ce Murmure 2023
 
 - Original Design: Benjamin Varin
-– Updated from _Éric le rouge_ flyer
+– Updated by Chloé Horta
 - Dev: [François Risoud](http://francoisrisoud.com/)
