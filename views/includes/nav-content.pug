@@ -1,0 +1,17 @@
+.content.col-layout--1
+  .col--1
+    .col-content.pb-0
+      .burger
+        - var w = 24;
+        - var h = 20;
+        svg(viewBox=`0 0 ${w} ${h}`)
+          line(x1=0, y1=2, x2=w, y2=0)
+          line(x1=0, y1=h/2+1, x2=w, y2=h/2-1)
+          line(x1=0, y1=h, x2=w, y2=h-2)
+        span.ml-1 MENU
+      .nav-content
+        a.text(href='/') édition 2019
+        a.text(href='/festival_asso') le festival &amp; l’asso
+        a.text(href='/infos_pratiques') infos pratiques
+        a.text.dossier-presse--link(href='/presse/CEMURMURE-DOSSIER-PRESSE-2018.pdf', target='_blank') dossier de presse
+.hider

@@ -1,0 +1,14 @@
+doctype html
+html(lang='fr')
+  head
+    include includes/meta.pug
+    include includes/rich-data.pug
+
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js")
+
+  body
+    block content
+
+    footer.blue--bg.white--text
+      include includes/footer-content.pug

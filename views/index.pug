@@ -1,0 +1,166 @@
+extends layout
+
+block content
+  nav.orange--bg.blue--text
+    include includes/nav-content.pug
+
+  section.trame--bg
+    .spacing
+    .content.col-layout--1
+      .col--1
+        .col-content.titles.logo-2019
+          img(src='/typos/logo_2019.svg')
+
+  section.trame--bg.dark
+    .content.col-layout--3
+      .col--1
+        .col-content.white--text.right--text.pl-0
+          .main-info.mt-1
+            h4 Semur-en-Auxois
+              br
+              | Parc des Quinconces
+            br
+            br
+      .col--1
+        .col-content.white--text.right--text.pl-0
+          .main-info.mt-1
+            h4 Spectacle vivant
+              br
+              | Animations Homemade
+              br
+              | Art Numérique
+            br
+            br
+      .col--1
+        .col-content.white--text.right--text.pl-0
+          .main-info.mt-1
+            h4 Buvette &amp; Restauration
+              br
+              | Produits locaux &amp; et artisanaux
+
+          .logos.pt-4
+            for n in ['a',1,2,3,4,5,6,7,8]
+              img(id='logo-'+n, src='/logos/logo_'+n+'.svg')
+
+    .content.col-layout--1
+      .col--1
+        .col-content.pt-0
+          .logos-small
+            for n in ['a',1,2,3,4,5,6,7,8]
+              img(id='logo-'+n, src='/logos/logo_'+n+'.svg')
+
+  section.pink--bg.blue--text
+    .content.col-layout--1
+      .col--1
+        .col-content.flex.pb-0.red--text.date-list
+          for n in [1,2,3,4,5]
+            h3.big vendredi 23
+        .col-content.pt-1
+          h3 à partir de 18h
+
+        .col-content.groups.friday
+          -
+            var fridayGroups = [{
+              name: 'LSP',
+              image: 'images-groupes5.jpg',
+              description: 'Jazz Funk Rock',
+              link: 'https://www.facebook.com/LSP-251617578826806/'
+            }, {
+              name: 'The Bongo Hop',
+              image: 'images-groupes6.jpg',
+              description: 'Afro Caribéen',
+              link: 'http://www.underdogrecords.fr/artistes/the-bongo-hop/'
+            }, {
+              name: 'Janice de Rosa',
+              image: 'images-groupes4.jpg',
+              description: 'Blues Métisse',
+              link: 'https://www.youtube.com/watch?v=4QZkuWceyUA'
+            }, {
+              name: 'Blue Orchid',
+              image: 'images-groupes3.jpg',
+              description: 'Rock Garage',
+              link: 'https://www.facebook.com/Blue-Orchid-694840170611470/'
+            }];
+
+          for group in fridayGroups
+
+            a(href=group.link, target='_blank')
+              .group
+                h1= group.name
+                  .new-window
+                    include ../assets/pictos/open_new_window.svg
+                p= group.description
+                img.date(src='/typos/23_aout.svg')
+                img.group-img(src='/img/groups/'+group.image)
+
+  section.red--bg.pink--text
+    .content.col-layout--1
+      .col--1
+        .col-content.flex.pb-0.orange--text.date-list
+          for n in [1,2,3,4,5]
+            h3.big samedi 24
+        .col-content.pt-1
+          h3 à partir de 14h
+
+        .col-content.groups.saturday
+          -
+            var saturdayGroups = [{
+              name: 'Oddloops',
+              image: 'images-groupes2.jpg',
+              description: 'Jazz Hip-hop',
+              link: 'https://oddloops.bandcamp.com/releases',
+            }, {
+              name: 'William Brutus',
+              image: 'images-groupes7.jpg',
+              description: 'Reggae World Soul',
+              link: 'http://williamsbrutus.com/',
+            }, {
+              name: 'Waraba Sound',
+              image: 'images-groupes1.jpg',
+              description: 'DJ Set - Worldwilde Mix',
+              link: 'https://www.facebook.com/WARABASOUND/',
+            }];
+
+          for group in saturdayGroups
+
+            a(href=group.link, target='_blank')
+              .group
+                h1
+                  .new-window
+                    include ../assets/pictos/open_new_window.svg
+                  | &nbsp;
+                  span=group.name
+                p(class=group.big?'big':'')= group.description
+                .clear
+                img.date(src='/typos/24_aout.svg')
+                img.group-img(src='/img/groups/'+group.image)
+              .clear
+          .spacing-group
+
+  section.blue--text.orange--bg
+    .content.col-layout--1
+      .col--1
+        .col-content.pt-7
+          h2.red--text Animations et ateliers
+    .content.col-layout--2
+      .col--1
+        .col-content
+          h5.v2 Un grand nombre d’animations interactives et d’ateliers auront lieu sur le festival pendant les 2 jours:
+          br
+          ul.red--text
+            li Une toute nouvelle version du Carabinophotomaton
+            li Boîte musicale
+            li H.O.M.E.R, la machine à histoire
+            lo Jackpot humain
+            li Projections de courts métrages
+            li Jeux vidéos
+      .col--1
+        .col-content
+          h5.v2 Cette année, des collectifs ont également été invités pour nous faire découvrir leur univers artistique et inventif:&nbsp;
+            br
+            br
+            h4
+              a.text(href='https://mamatus.fr/' target='_blank') Mamatus
+            br
+            h4 le fablab de Semur-en-Auxois
+          br

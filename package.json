@@ -1,0 +1,26 @@
+{
+  "name": "cemurmure-festival-2023",
+  "version": "1.0.0",
+  "description": "Ce murmure festival 2023",
+  "author": "François Risoud <francois.risoud@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite build && concurrently \"chokidar '**/*' -d 1000 -i '/(dist|node_modules)/' -c 'vite build'\" \"vite preview\"",
+    "build": "vite build",
+    "start": "vite preview"
+  },
+  "devDependencies": {
+    "chokidar-cli": "^3.0.0",
+    "concurrently": "^8.2.0",
+    "prettier": "^2.8.8",
+    "pug": "^2.0.3",
+    "serve": "^14.2.0",
+    "stylus": "^0.54.5",
+    "vite": "^4.3.9",
+    "vite-plugin-pug": "^0.3.2"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.0",
+    "reset-css": "^4.0.1"
+  }
+}

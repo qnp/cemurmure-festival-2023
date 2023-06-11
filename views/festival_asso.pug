@@ -1,0 +1,73 @@
+extends layout
+
+block content
+  nav.orange--bg.blue--text
+    include includes/nav-content.pug
+
+  section.blue--bg.white--text
+    .content.col-layout--1
+      .col--1
+        .col-content.py-10.my-6
+          h2.orange--text Le festival
+          h4.big.mt-7 En 2012, un groupe d’ami.e.s passionnés par les arts vivants et numériques, décide de créer un festival « homemade » et éclectique, à son image. Chacun apporterait sa contribution, sur la base de son expérience et de ses passions. Depuis, le festival a lieu chaque fin d’été, mêlant les arts sous toutes leurs formes afin d’offrir au public un moment convivial, de découverte et de détente.
+
+  section.green--bg.white--text
+    .content.col-layout--1
+      .col--1
+        .col-content.pt-7
+          h2.blue--text Notre engagement - un festival au vert
+    .content.col-layout--2
+      .col--1
+        .col-content
+          h5.v2 Dès sa création, les organisateurs du festival ont eu à cœur de proposer un évènement ancré dans son environnement et son terroir : mettre en valeur le lieu occupé, développer des partenariats avec des artisans et producteurs locaux et produire/selon un principe de récupération sont les maîtres mots. En effet, à l’heure de la consommation de masse, il nous semble important de démontrer que l’on peut consommer « raisonné » et de qualité.
+      .col--1
+        .col-content
+          h5.v2 Notre festival a toujours été inscrit dans une démarche écologique et nous souhaitons continuer à utiliser des matériaux biodégradables et à réduire au maximum la production de déchets du festival. Pour cela, plusieurs actions ont été mises en œuvre : l’utilisation de toilettes sèches, de gobelets réutilisables (par ailleurs, n’hésitez pas à ramener les votres, vous savez, ceux qui peuplent vos placards de cuisine) et d’assiettes en matière recyclable et/ou biodégradable, l’installation de poubelles favorisant le tri sélectif ou encore la distribution de cendriers de poche.
+
+    .content.col-layout--1
+      .col--1
+        .col-content.pt-7
+          h2.blue--text RESTAURATION ET BUVETTE
+    .content.col-layout--2
+      .col--1
+        .col-content
+          h5.v2 La restauration est assurée par les membres de l’association, de la plantation des pommes de terre à la conception des repas. Les produits utilisés sont achetés chez des producteurs locaux.
+      .col--1
+        .col-content
+          h5.v2 Légumes bios et locaux de «La petite Semeuse» à Genay et du «Moulin de Braux» à Braux – Charcuterie de la boucherie «Notre-Dame» à Saint-Euphrone – Fromage d’Epoisses (Berthaut AOP) mis en valeur en sauce et sandwich – Bière artisanale de Dijon – Jus de fruit et limonade bios de Dijon et du Jura – Vin de Bourgogne
+
+
+  section.blue--bg.white--text
+    .content.col-layout--1
+      .col--1
+        .col-content.gallery.pt-7
+          h2.pb-7 éditions précédentes en images
+
+          .galleria
+            - var imgarr = new Array(36)
+            for k, i in imgarr
+              img(src='/img/2017/img'+(i+1)+'.jpg')
+
+
+
+  section.orange--bg.blue--text
+    .content.col-layout--1
+      .col--1
+        .col-content.pt-7
+          h2.red--text L'asso – L’équipe
+    .content.col-layout--2
+      .col--1
+        .col-content
+          h5.v2 Passionné.e.s de musique et d’arts de tous horizons, bricoleureuses, fêtard.e.s et artistes également, un groupe d’ami.e.s soudé et motivé décide de faire bouger sa région dans la belle ville de Semur-en-Auxois. Ce groupe d’ami.e.s grandit chaque année avec de  nouvelles personnes enthousiastes et déterminées qui nous rejoignent.
+      .col--1
+        .col-content
+          h5.v2 Chacun s’exprime à travers son art, ses compétences et son savoir personnel, et toutes les générations sont présentes ! (parents, petit frêres et sœurs, ...) À chaque édition, ambiance familliale, festive et stimulante assurée !
+          br
+          br
+          h5.v2
+            a.text(href='https://docs.google.com/forms/d/e/1FAIpQLSfWtAc4EB3LWt_JVMf7H4eyaoePj9iGDW4TgfP3cUBr_5B7yA/viewform?fbclid=IwAR3e88Le2GMqhxCoqkiMyf1fpnk6B-MQ7oEIpaHXeAdwWZ6tQw28ybD62WVM', target='_blank') Rejoignez-nous !
+
+    .content.col-layout--1
+      .col--1
+        .col-content.pt-7.mb-7
+          .image(style='background-image: url(/img/asso.jpg)')

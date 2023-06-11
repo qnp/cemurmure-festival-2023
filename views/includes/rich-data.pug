@@ -1,0 +1,38 @@
+//- Rich data (schema.org)
+script(type='application/ld+json').
+  {
+    "@context": "http://www.schema.org",
+    "@type": "Event",
+    "about": "Festival",
+    "organizer": "Association Raspatakouet",
+    "name": "Ce Murmure Festival 2019",
+    "url": "http://cemurmurefestival.com/",
+    "image": "http://cemurmurefestival.com/img/share/affiche.png",
+    "description": "Festival de musique et d’arts, interactif, tout public.",
+    "startDate": "2019-08-23T18:00+01:00",
+    "endDate": "2019-08-26T2:00+01:00",
+    "offers": [{
+      "price": 6,
+      "priceCurrency": "euro",
+      "category": "1 jour",
+      "availability": true
+    }, {
+      "price": 10,
+      "priceCurrency": "euro",
+      "category": "pass 2 jour",
+      "availability": true
+    }, {
+      "price": 0,
+      "priceCurrency": "euro",
+      "category": "enfants -12 ans",
+      "availability": true
+    }],
+    "location": {
+      "@type": "PostalAddress",
+      "streetAddress": "Parc des Quinconces",
+      "addressLocality": "Semur-en-Auxois",
+      "postalCode": "21140",
+      "addressCountry": "France",
+      "telephone": "0685900102"
+    }
+  }

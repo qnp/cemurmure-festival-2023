@@ -1,0 +1,41 @@
+- const title = 'Ce Murmure Festival 2019';
+- const fullURL = 'http://cemurmurefestival.fun';
+
+- const keywords = 'Ce Murmure, Festival, Semur-en-Auxois, 23 Août, 24 Août, 21140, Musique, Art, Animations, Numérique, Interactif, Fête, Buvette, Restauration, Danse, Party';
+- const desc_search = 'Vous en rêvez depuis l’été dernier, le voici revenir au galop ! Le Festival Ce Murmure vous attend les 23 et 24 Août à Semur-en-Auxois.';
+- const desc_social = 'Vous en rêvez depuis l’été dernier, le voici revenir au galop ! Le Festival Ce Murmure vous attend les 23 et 24 Août à Semur-en-Auxois.';
+- const social_image = 'static/img/share/share.png';
+- const theme_color = '#86382E';
+
+meta(http-equiv="Content-Type",content="text/html; charset=utf-8")
+
+//- prevent phone number auto-detection (Safari iOS & Blackberry)
+meta(name="format-detection",content="telephone=no")
+meta(http-equiv="x-rim-auto-match",content="none")
+meta(name="viewport",content="width=device-width,initial-scale=1.0")
+meta(name="theme-color",content=theme_color)
+
+//- search engines
+title= title
+meta(name="description",content=desc_search)
+meta(name="keywords",content="Lou-Anne Lacaille, Beaune, ostéo, ostéopathe, ostéopathie, ISOstéo, médecine manuelle, médecine douce, soins, bien être, périnatalité, nourrissons, nouveaux-nés, femmes enceintes, post-partum, sportifs, travailleurs, enfants, personnes agées, Chagny, Nuits-saint-Georges, Meursault")
+
+//- google+
+meta(itemprop="name",content=title)
+meta(itemprop="description",content=desc_social)
+meta(itemprop="image",content=fullURL+social_image)
+
+//- twitter cards
+meta(name="twitter:card",content="summary_large_image")
+meta(name="twitter:title",content=title)
+meta(name="twitter:description",content=desc_social)
+meta(name="twitter:image",content=fullURL+social_image)
+meta(name="twitter:creator",content="@ekqnp")
+
+//- Open Graph
+meta(property="og:title",content=title)
+meta(property="og:type",content="website")
+meta(property="og:url",content=fullURL)
+meta(property="og:image",content=fullURL+social_image)
+meta(property="og:description",content=desc_social)
+meta(property="og:site_name",content=title)

@@ -1,0 +1,33 @@
+@import 'global/fonts.styl'
+@import 'global/mixins.styl'
+@import 'global/variables.styl'
+@import 'global/generic.styl'
+@import 'global/layout.styl'
+
+.benevole, .kiss-kiss-img
+  height auto
+  width 100%
+  max-width 590px
+  margin 20px auto
+  path
+    transition fill 0.3s ease
+
+a:hover
+  .benevole
+    path
+      fill $orange
+  .kiss-kiss-img
+    path
+      fill $green
+
+.new-window.kiss-kiss
+  position absolute
+  top 36px
+  right 52px
+
+.heart
+  font-size 60px
+
+.infos-pratiques
+  a.text
+    background-image linear-gradient(to left, $pink 0%, $orange  100%)
